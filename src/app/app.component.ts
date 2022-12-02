@@ -134,13 +134,13 @@ export class AppComponent {
     console.log(gData.links);
     this._createTree(gData);
     const leaves = this._getTreeLeaves();
-    const maxWidth = Object.keys(leaves).length;
+    // const maxWidth = Object.keys(leaves).length;
 
     //     for (let i = maxWidth; i > 0; --i) {
     // console.log("Check: ", i)
     //       this._setDeepnessCoordinates(i);
     //     }
-    console.debug(maxWidth, this._deepness, leaves, this._tree);
+    // console.debug(maxWidth, this._deepness, leaves, this._tree);
   }
 
   private _createTree(gData): void {
@@ -213,5 +213,7 @@ export class AppComponent {
     return leaves;
   }
 
-  private _setDeepnessCoordinates(deepness): void {}
+  private _setDeepnessCoordinates(deepness): void {
+    
+  }
 }
