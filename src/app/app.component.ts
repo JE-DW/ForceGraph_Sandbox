@@ -202,10 +202,7 @@ export class AppComponent {
       if (!tree.children[link].childCount) {
         leaves[link] = true;
       } else {
-        const childLeaves = this._getTreeLeaves(
-          tree.children[link],
-          deepness + 1
-        );
+        const childLeaves = this._getTreeLeaves( tree.children[link], deepness + 1);
 
         leaves = { ...leaves, ...childLeaves };
       }
